@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+ <h2>The rotate() Method</h2>
+ <canvas id="myCanvas" width="300" height="150" style="border: 1px solid grey;"></canvas>
+ <script>
+
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    ctx.fillRect(30,20,100,50);
+    ctx.rotate(20 * Math.PI / 180);
+    ctx.fillStyle="yellow";
+    ctx.fillRect(30,20,100,50);
+ </script>   
+</body>
+</html>

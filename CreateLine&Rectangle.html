@@ -1,0 +1,30 @@
+<!-- #Write a program to create a line and rectangle  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    
+<canvas id="myCanvas" width="350" height="300" style="border: 1px solid grey;"></canvas>
+<script>
+
+
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.lineWidth="6";
+    ctx.strokeStyle="purple";
+    ctx.rect(5,5,290,140);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(250,200);
+    ctx.lineTo(10,200);
+    ctx.lineWidth=5;
+    ctx.strokeStyle="blue";
+    ctx.stroke();
+
+
+</script>
+</body>
+</html>

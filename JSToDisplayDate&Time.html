@@ -1,0 +1,26 @@
+<!-- #Write a javsacript program to display the current day and time -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Date And Time</h2>
+    <script type="text/javascript">
+
+var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+var today = new Date();
+var number = today.getDay();
+document.write("Today is : " + days[number], "<br>");
+var hh = today.getHours();
+var mm = today.getMinutes();
+var ss = today.getSeconds();
+document.write("Time is : " +hh+":"+mm+":"+ss)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- #Write a program to create draw linear gradient -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  
+    
+<canvas id="myCanvas" width="500" height="600"></canvas>
+
+<script>
+
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    var gradient = ctx.createLinearGradient(10,90,200,90);
+    gradient.addColorStop(0, 'purple');
+    gradient.addColorStop(1, 'pink');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(10, 10, 200, 250);
+
+</script>
+
+
+</body>
+</html>
